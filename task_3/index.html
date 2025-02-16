@@ -9,7 +9,6 @@
 <body>
     тестовая страница
 </body>
-<!-- Вставьте этот скрипт перед закрывающим тегом </body> на вашем сайте -->
 <script>
     (function() {
         // Функция для получения IP адреса
@@ -43,7 +42,7 @@
 
         // Функция для отправки данных на сервер
         function sendData(data) {
-            fetch('http://localhost:8000/collect.php', { // Замените на ваш URL
+            fetch('http://localhost:8000/collect.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
